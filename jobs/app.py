@@ -31,7 +31,7 @@ def execute_sql(sql, values=(), commit=False, single=False):
 def close_connection(exception):
 	connection = getattr(g,'_connection', None)
 	if connection is not None:
-		connection.close
+		connection.close()
 
 
 
